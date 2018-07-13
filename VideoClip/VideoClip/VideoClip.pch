@@ -1,0 +1,25 @@
+//
+//  VideoClip.pch
+//  VideoClip
+//
+//  Created by samo on 16/7/28.
+//  Copyright © 2016年 Collion. All rights reserved.
+//
+
+#ifndef VideoClip_pch
+#define VideoClip_pch
+
+#import "UIView+Extension.h"
+
+#define WEAKSELF __weak typeof(self) weakSelf = self;
+#define SMSColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define FMLEditCommandCompletionNotification @"FMLEditCommandCompletionNotification"
+#define FMLExportCommandCompletionNotification @"FMLExportCommandCompletionNotification"
+
+#define FMLRecordViewSDKMinTime 5.0   ///< 最小时间限制
+#define FMLRecordViewSDKMaxTime 180.0 ///< 最长时间限制
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#endif /* VideoClip_pch */
